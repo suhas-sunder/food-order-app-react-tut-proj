@@ -1,18 +1,19 @@
 import React from "react";
 import styles from "./MealItem.module.css";
+import MealItemForm from "./MealItemForm";
 
-function MealItem(props) {
-  const price = `$${props.price.toFixed(2)}`;
+function MealItem({ name, description, price }) {
+  const menuPrice = `$${price.toFixed(2)}`;
 
   return (
-    <li>
-      <div>
-        <h3>{props.name}</h3>
-        <div className={styles.description}>{props.description}</div>
-        <div className={price}>{props.price}</div>
+    <li className={styles.meal}>
+      <div >
+        <h3>{name}</h3>
+        <div className={styles.description}>{description}</div>
+        <div className={styles.price}>{menuPrice}</div>
       </div>
       <div>
-
+        <MealItemForm />
       </div>
     </li>
   );
