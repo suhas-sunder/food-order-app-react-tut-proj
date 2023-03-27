@@ -2,7 +2,7 @@ import React from "react";
 import Input from "../../UI/Input";
 import styles from "./MealItemForm.module.css";
 
-function MealItemForm() {
+function MealItemForm(props) {
   return <form className={styles.form}>
     <Input label="Amount" input={{
         id:'amount',
