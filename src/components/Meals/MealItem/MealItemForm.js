@@ -23,7 +23,6 @@ function MealItemForm({onAddToCart}) {
       return;
     }
 
-    console.log(amountInputRef.current)
     onAddToCart(enteredAmountNumber);
   };
 

@@ -11,6 +11,4 @@ const Input = React.forwardRef(({ input, label }, ref) => {
   );
 });
 
-
-
 export default Input;
